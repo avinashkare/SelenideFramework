@@ -1,7 +1,16 @@
+# Maven build output
 target/
+target/allure-results/
+
+# Allow Maven wrapper JAR
 !.mvn/wrapper/maven-wrapper.jar
+
+# Keep module‐specific targets (if any)
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+# Allure CLI “serve” output (if created at project root)
+allure-results/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
